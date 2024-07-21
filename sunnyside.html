@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Sunnyside.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Sunnyside agency landing page</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img class="logo" src="./images/logo.svg" alt="logo Sunnyside"> 
+      <button onclick="show_hide()" class="btn"><i class="fa fa-bars"></i></button>
+    <div class="topnav">
+      <div class="mobile-container" id="containerNav">
+        <a class="about" href="#About">About</a>
+        <a class="services" href="#Services">Services</a>
+        <a class="projects" href="#Projects">Projects</a>
+        <a class ="active" href="#Contact">Contact</a>
+      </div>
+    </div>
+      <h1>WE ARE CREATIVES</h1>
+      <div class="arrow"></div>
+    </div>
+    <div class="main"> 
+      <div class="egg"></div>
+      <div class="brand">
+          <h2><strong>Transform your brand</strong></h2>
+          <p> We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a href="#LEARN MORE>">LEARN MORE</a>
+      </div>
+      <div class="glass"></div>
+      <div class="audience">
+          <h2><strong>Stand out to the right audience</strong></h2>
+          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          <a href="#LEARN MORE>">LEARN MORE</a>
+      </div>
+      <div class="graphic-design">
+          <h3>Graphic Design</h3>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+      <div class="photography">
+          <h4>Photography</h4>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+      <div class="title-testimonials">
+          <h5>CLIENT TESTIMONIALS</h5>
+      </div>
+      <div class="testimonials">
+        <div class="persons">
+          <div class="Emily">
+            <img src="./images/image-emily.jpg" alt="afbeelding Emily">
+            <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <h6>Emily R.</h6>
+            <div>Marketing Director</div>
+          </div>
+          <div class="Thomas">
+            <img src="./images/image-thomas.jpg" alt="afbeelding Thomas">
+            <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+            <h6>Thomas S.</h6>
+            <div>Chief Operating Officer</div>
+          </div>
+          <div class="Jennie">
+            <img src="./images/image-jennie.jpg" alt="afbeelding Jennie">
+            <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <h6>Jennie F.</h6>
+            <div>Business Owner</div>
+          </div>
+        </div>
+      </div>
+      <div class="pictures">
+        <img class="milk" src="./images/mobile/image-gallery-milkbottles.jpg" alt="afbeelding melkflessen">
+        <img class="orange" src="./images/mobile/image-gallery-orange.jpg" alt="afbeelding sinaasappel">
+        <img class="cone" src="./images/mobile/image-gallery-cone.jpg" alt="afbeelding ijshoorntje">
+        <img class="sugar" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="afbeelding gestapelde suikerklontjes">
+        <img class="dmilk" src="./images/desktop/image-gallery-milkbottles.jpg" alt="afbeelding melkflessen">
+        <img class="dorange" src="./images/desktop/image-gallery-orange.jpg" alt="afbeelding sinaasappel">
+        <img class="dcone" src="./images/desktop/image-gallery-cone.jpg" alt="afbeelding ijshoorntje">
+        <img class="dsugar" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="afbeelding gestapelde suikerklontjes">
+      </div>
+    </div>
+    <div class="footer">
+        <img class="sunny" src="./images/logo.svg" alt="logo Sunnyside">
+        <ul>
+          <li><a href="#About>">About</a></li>
+          <li><a href="#Services>">Services</a></li>
+          <li><a href="#Projects>">Projects</a></li>
+        </ul>
+        <div class="socials">
+          <div class="social-icons">
+          <img src="./images/icon-facebook.svg" alt="icoon facebook">
+          <img src="./images/icon-instagram.svg" alt="icoon instagram">
+          <img src="./images/icon-twitter.svg" alt="icoon twitter">
+          <img src="./images/icon-pinterest.svg" alt="icoon pinterest">
+          </div>
+        </div>
+    </div>
+  </div>
+  <script> 
+ 
+ function show_hide() {
+      var x = document.getElementById("containerNav");
+      if (x.className === "mobile-container") {
+        x.className += " responsive";
+      } else {
+        x.className = "mobile-container";
+      }
+    }
+
+
+  </script>
+</body>
+</html>
